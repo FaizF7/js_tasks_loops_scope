@@ -8,17 +8,16 @@ stations = ["Dundee", "Edinburgh", "North Berwick", "Newcastle", "York", "Leeds"
  * Q1.
  * The East Coast Main Line doesn't stop at Peterborough! Add London Kings Cross to the end of the array to complete the line.
  */
-
-// console.log(stations);
-
+stations.push("London Kings Cross")
+console.log(stations);
 
 
 /**
  * Q2.
  * It doesn't go as far as Dundee either, so remove it from the start of the array.
  */
-
-// console.log(stations);
+stations.shift();
+console.log(stations);
 
 
 
@@ -27,9 +26,9 @@ stations = ["Dundee", "Edinburgh", "North Berwick", "Newcastle", "York", "Leeds"
  * How many stations are on the line?
  */
 
-stationCount = null;
+stationCount = stations.length;
 
-// console.log("There are " + stationCount + " stations.");
+console.log("There are " + stationCount + " stations.");
 
 
 
@@ -38,9 +37,9 @@ stationCount = null;
  * Which station is the third stop?
  */
 
-thirdStation = null;
+thirdStation = stations[2];
 
-// console.log("The third station is " + thirdStation);
+console.log("The third station is " + thirdStation);
 
 
 
@@ -48,17 +47,18 @@ thirdStation = null;
  * Q5.
  * Someone put the wrong Berwick on the timetable! Update "North Berwick" to "Berwick-upon-Tweed".
  */
-
-// console.log(stations);
-
+index = stations.indexOf("North Berwick");
+stations[index] = "Berwick-upon-Tweed";
+console.log(stations);
 
 
 /**
  * Q6.
  * How did Leeds get on there? Better remove it.
  */
-
-// console.log(stations);
+index = stations.indexOf("Leeds");
+stations.splice(index,1);
+console.log(stations);
 
 
 
@@ -66,9 +66,8 @@ thirdStation = null;
  * Q7.
  * We forgot about Darlington! Add it to the route between Newcastle and York.
  */
-
-// console.log(stations);
-
+stations.splice(stations.indexOf("York"),0,"Darlington");
+console.log(stations);
 
 
 /**
@@ -76,12 +75,17 @@ thirdStation = null;
  * Is Durham one of the stops?
  */
 
-stoppingAtDurham = null;
+stoppingAtDurham = stations.includes("Durham");
 
-// console.log(stoppingAtDurham);
+console.log(stoppingAtDurham);
 
 
 /**
  * Q9.
  * If we are stopping at Durham, print "Yay Durham!" to the terminal. If not print "Aww...".
  */
+if (stoppingAtDurham){
+    console.log("Yay Durham");
+}else{
+    console.log("Aww");
+}
