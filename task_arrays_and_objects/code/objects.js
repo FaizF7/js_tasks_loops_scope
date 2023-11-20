@@ -27,56 +27,62 @@ tortoise = {
  * Q1. What's the name of the dog?
  */
 
-dogName = null;
+dogName = dog.name;
 
-// console.log("The dog's name is " + dogName);
+console.log("The dog's name is " + dogName);
 
 /**
  * Q2. What breed is the cat?
  */
 
-catBreed = null;
+catBreed = cat.breed;
 
-// console.log("The cat is a " + catBreed);
+console.log("The cat is an " + catBreed);
 
 /**
  * Q3. It's the tortoise's birthday! Add one to her current age.
  */
-
-// console.log(tortoise)
+tortoise.age+=1;
+console.log(tortoise)
 
 /**
  * Q4. How many different colours is Poppy?
  */
 
-dogColourCount = null;
+dogColourCount = dog.colours.length;
 
-// console.log("The dog has " + dogColourCount + " different colours");
+console.log("The dog has " + dogColourCount + " different colours");
 
 /**
  * Q5. I've just bought a 12-year-old African Grey parrot called Lucky. Create an object for her.
  */
 
-parrot = null;
+parrot = {
+  name:"Lucky",
+  age: 12,
+  breed: "African",
+  colours: ["grey"]
+}
 
-// console.log(parrot);
+console.log(parrot);
 
 /**
  * Q6. Ella's favourite food is dandelion, add this information to her object
  */
+tortoise.food = "dandelion";
 
-// console.log(tortoise);
+console.log(tortoise);
 
 /**
  * Q7. What's the combined age of all the pets?
  */
 
-totalPetAge = null;
+totalPetAge = dog.age + cat.age+tortoise.age+parrot.age;
 
-// console.log("The total age of the pets is " + totalPetAge);
+console.log("The total age of the pets is " + totalPetAge);
 
 /**
  * Q8. It's turns out that Morris isn't a European Shorthair. We don't actually know his real breed, so remove that key from his object
  */
-
-// console.log(cat);
+delete cat.breed;
+console.log(cat);
