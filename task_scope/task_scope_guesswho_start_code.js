@@ -1,10 +1,12 @@
 // // GUESS 1 ///////////////////
+// Prediction: "Guess who is Joseph"
+
 // let guess = {
 //   hair_colour: "red",
 //   eye_colour: "blue",
 //   hat: false,
 //   glasses: true,
-//   firstName: "Joseph",
+//   firstName: "Joseph"
 // };
 
 // const guessWho = function () {
@@ -13,25 +15,29 @@
 
 // const finalAnswer = guessWho();
 // console.log(finalAnswer);
-// // Prediction: 
+
 
 // // GUESS 2 ///////////////////
+// Predicted: 
+// "guess1: `Guess Who is Liz.`"
+// "guess2: `Guess Who is Donna`"
 
-let firstName = "Donna";
+// let firstName = "Donna";
 
-const guessWho = function () {
-  const glasses = false;
-  let firstName = "Liz";
-  return `Guess Who is ${firstName}.`;
-};
+// const guessWho = function () {
+//   const glasses = false;
+//   let firstName = "Liz";
+//   return `Guess Who is ${firstName}.`;
+// };
 
-const guess1 = guessWho();
-console.log("guess1: ", guess1);
+// const guess1 = guessWho();
+// console.log("guess1: ", guess1);
 
-const guess2 = `Guess Who is ${firstName}`;
-console.log("guess2: ", guess2);
+// const guess2 = `Guess Who is ${firstName}`;
+// console.log("guess2: ", guess2);
 
 // // GUESS 3 ///////////////////
+// Predicted: `Guess Who is Chris`
 
 // const guess = {
 //   hair_colour: "black",
@@ -63,6 +69,7 @@ console.log("guess2: ", guess2);
 // console.log(finalAnswer);
 
 // // GUESS 4 ///////////////////
+// Predicted: `Guess Who is Gail`
 
 // let firstName = "Gail";
 
@@ -77,7 +84,9 @@ console.log("guess2: ", guess2);
 // const finalAnswer = guessWho();
 // console.log(finalAnswer);
 
+
 // // GUESS 5 ///////////////////
+// Predicted: Error because you cannot reassign const variable
 
 // const guess = {
 //   hair_colour: "blonde",
